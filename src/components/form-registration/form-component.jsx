@@ -45,6 +45,7 @@ export const FormRegistration = () => {
           email={email}
           setEmail={setEmail}
           setErrors={setErrors}
+          setRegistrationFinish={setRegistrationFinish}
         />
         <PasswordComponent
           password={password}

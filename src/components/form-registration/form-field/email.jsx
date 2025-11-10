@@ -1,7 +1,13 @@
-export const EmailComponent = ({ email, setEmail, setErrors }) => {
+export const EmailComponent = ({
+  email,
+  setEmail,
+  setErrors,
+  setRegistrationFinish,
+}) => {
   //обработчик для поля Email
   const onEmailChange = ({ target }) => {
     setEmail(target.value);
+    setRegistrationFinish(false);
   };
 
   const onEmailBlur = ({ target }) => {
